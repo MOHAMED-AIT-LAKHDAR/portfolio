@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-ink font-sans text-slate-300 antialiased; }
+h1, h2, h3 { @apply font-display; }
+:focus-visible { outline: 2px solid #22d3ee; outline-offset: 3px; border-radius: 6px; }
+
+.grad { @apply bg-gradient-to-r from-accent to-glow bg-clip-text text-transparent; }
+.bar { @apply mx-auto mt-4 h-1 w-24 rounded bg-gradient-to-r from-accent to-glow; }
+.grid-bg {
+  background-image: linear-gradient(rgba(139,124,246,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(139,124,246,.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at center, #000 25%, transparent 72%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 25%, transparent 72%);
+}
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+.caret { display: inline-block; width: .55ch; height: 1em; margin-left: 2px; vertical-align: -2px; background: #22d3ee; animation: blink 1.1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .animate-float, .caret { animation: none; }
+}
