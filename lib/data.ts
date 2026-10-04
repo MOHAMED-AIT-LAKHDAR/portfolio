@@ -4,12 +4,12 @@ import { Brain, Code2, FileCheck2, Globe, Network, Radar, ShieldCheck, Terminal,
 export const profile = {
   name: "Mohamed AIT LAKHDAR",
   role: "Cybersecurity Engineering Student",
-  location: "Agadir, Morocco",
+  location: "Agadir, Morocco | Mobilité : France",
   email: "mohamedaitlakhdar04@gmail.com",
   linkedin: "https://linkedin.com/in/mohamed-ait-lakhdar-810391263/",
   phones: [
     { label: "Morocco", display: "+212 672 362 599", href: "tel:+212672362599" },
-    { label: "France", display: "+33 7 00 00 00 00", href: "tel:+33700000000" },
+    { label: "France", display: "+33 6 51 85 81 93", href: "tel:+33651858193" },
   ],
   cv: "/Mohamed_AIT_LAKHDAR_CV.pdf",
   objective:
